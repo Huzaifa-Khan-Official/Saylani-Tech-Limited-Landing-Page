@@ -7,8 +7,8 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <div className="z-20 fixed w-full">
-            <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div className="z-20 fixed w-full bg-black bg-opacity-50">
+            <nav className="container mx-auto px-6 py-3 flex justify-between items-center ">
                 <Link to="/" className="text-white text-xl font-bold">
                     SAYLANI TECH LIMITED
                 </Link>

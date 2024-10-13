@@ -3,6 +3,7 @@ import Layout from '../Components/Layout/Layout'
 import video from "../assets/video.mp4"
 import { Link } from 'react-router-dom'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
+import Partners from '../Components/Partners/Partners'
 
 function Home() {
     return (
@@ -17,7 +18,6 @@ function Home() {
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <h1>Saylani Tech Limited</h1>
                 <div className='absolute inset-0 bg-black bg-opacity-50'>
                     <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
                         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Saylani Tech Limited</h1>
@@ -31,6 +31,7 @@ function Home() {
                             Scroll more, learn more <MdKeyboardDoubleArrowDown />
                         </div>
                     </main>
+                    <Partners />
                 </div>
             </Layout>
         </div>

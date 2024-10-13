@@ -6,10 +6,10 @@ function Layout({ children }) {
     return (
         <div>
             <Navbar />
-            <div className='pt-20'>
+            <div className='min-h-screen'>
                 {children}
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
