@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
+import { FaBars } from 'react-icons/fa'
+import { RxCross2 } from 'react-icons/rx'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <div className="z-10 fixed w-full">
+        <div className="z-20 fixed w-full">
             <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
                 <Link to="/" className="text-white text-xl font-bold">
                     SAYLANI TECH LIMITED
@@ -19,14 +21,14 @@ function Navbar() {
                     <Link to="/portfolio" className="text-white hover:text-gray-300">Portfolio</Link>
                     <Link to="/career" className="text-white hover:text-gray-300">Career</Link>
                 </div>
-                <button className="hidden md:block bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-600 transition duration-300 ml-4">
+                <button className="hidden md:block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 ml-4">
                     Get Started
                 </button>
                 <button
-                    className="md:hidden text-white"
+                    className="md:hidden bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    {isMenuOpen ? 'Close' : 'Menu'}
+                    {isMenuOpen ? <RxCross2 /> : <FaBars />}
                 </button>
             </nav>
             {isMenuOpen && (

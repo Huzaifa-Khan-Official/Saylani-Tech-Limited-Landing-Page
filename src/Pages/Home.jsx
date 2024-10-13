@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../Components/Layout/Layout'
 import video from "../assets/video.mp4"
 import { Link } from 'react-router-dom'
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 
 function Home() {
     return (
@@ -26,9 +27,9 @@ function Home() {
                         <div className="flex items-center flex-col justify-center">
                             <span className="text-white">Your Vision, Our Code</span>
                         </div>
-                        <Link href="#learn-more" className="absolute bottom-10 text-white hover:text-gray-300">
-                            Scroll more, learn more ↓
-                        </Link>
+                        <div className="absolute flex items-center gap-2 bottom-10 text-gray-300 hover:text-white cursor-pointer">
+                            Scroll more, learn more <MdKeyboardDoubleArrowDown />
+                        </div>
                     </main>
                 </div>
             </Layout>
