@@ -4,6 +4,9 @@ import video from "../assets/video.mp4"
 import { Link } from 'react-router-dom'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import Partners from '../Components/Partners/Partners'
+import Testimonial from '../Components/Testimonial/Testimonial'
+import TechShowcase from '../Components/TechShowcase/TechShowcase'
+import Services from '../Components/Services/Services'
 
 function Home() {
     return (
@@ -32,6 +35,9 @@ function Home() {
                         </div>
                     </main>
                     <Partners />
+                    <Services />
+                    <Testimonial />
+                    <TechShowcase />
                 </div>
             </Layout>
         </div>

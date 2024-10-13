@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bubble2 {
+  animation: spin1 2s infinite alternate;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
