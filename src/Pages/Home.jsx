@@ -8,10 +8,11 @@ import Testimonial from '../Components/Testimonial/Testimonial'
 import TechShowcase from '../Components/TechShowcase/TechShowcase'
 import Services from '../Components/Services/Services'
 import MeetMembers from '../Components/MeetMembers/MeetMembers'
+import Example from '../Components/Example/Example'
 
 function Home() {
     return (
-        <div className=''>
+        <div>
             <Layout>
                 <video
                     autoPlay
@@ -37,6 +38,7 @@ function Home() {
                     </main>
                     <Partners />
                     <Services />
+                    <Example />
                     <Testimonial />
                     <TechShowcase />
                     <MeetMembers />
