@@ -7,6 +7,7 @@ import Partners from '../Components/Partners/Partners'
 import Testimonial from '../Components/Testimonial/Testimonial'
 import TechShowcase from '../Components/TechShowcase/TechShowcase'
 import Services from '../Components/Services/Services'
+import MeetMembers from '../Components/MeetMembers/MeetMembers'
 
 function Home() {
     return (
@@ -38,6 +39,7 @@ function Home() {
                     <Services />
                     <Testimonial />
                     <TechShowcase />
+                    <MeetMembers />
                 </div>
             </Layout>
         </div>

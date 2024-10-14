@@ -1,5 +1,5 @@
-import testimonial from "../../assets/testimonial.jfif"
-import smit from "../../assets/smitlogo.png"
+import testimonial from "../../assets/testimonial.png"
+import shadowbeyIcon from "../../assets/shadowbeyIcon.png"
 
 export default function Testimonial() {
     return (
@@ -7,9 +7,9 @@ export default function Testimonial() {
             <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 mb-6 md:mb-0 md:pr-6">
                     <img
-                        src={smit}
+                        src={shadowbeyIcon}
                         alt="Shadowbey Logo"
-                        className="w-[100px] h-[100px]"
+                        className="w-[200px] h-[50px] mb-4"
                     />
                     <blockquote className="text-2xl font-light mb-4">
                         "From the initial concept discussions to the final product, their team was attentive, innovative, and professional throughout the entire process."
